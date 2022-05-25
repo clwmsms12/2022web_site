@@ -52,3 +52,18 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 .mainMenuWrap .mainMenu li a:hover{
     background: #336DAC;
 }
+
+/* visual */
+.visualWrap{
+    background-image: url(../images/main_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #213c6b;
+    /* background: #213c6b url(../images/main_bg01.jpg) no-repeat center; */
+}
+.visualWrap .visual{width: 980px;height: 400px;margin: 0 auto;
+    position: relative;overflow: hidden;}
+.visualWrap .visual h3{line-height: 80px;font-size: 76.6px;letter-spacing: 0.34em;
+    color: #eff0ee;position: absolute;top: 120px;}
+.visualWrap .visual img{position: absolute;right: 0px;}
+.box{background-color: red;height: 300px;}
