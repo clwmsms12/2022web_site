@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
-
 /* header  */
-.headerTopWrap{border-bottom: 1px solid #dcdcdc;margin-bottom: 16px;min-width:980px}
+
+.headerTopWrap{border-bottom: 1px solid #dcdcdc;min-width:980px}
 .headerTop{width: 980px;margin: 0 auto;}
 .topMenu ul{float: right;}
 .topMenu li{float: left;position: relative;}
@@ -15,17 +14,18 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 .topMenu li a{display: block;padding: 7px 10px;font-size:12px;line-height: 12px}
 
 
+
+#headerWrap .center{width: 980px;margin: 0 auto;position: relative;padding: 16px 0;}
+
 #headerWrap h1{
-    margin: 0 auto;width: 151px;
-    /* margin-bottom: 16px; */
+    margin: 0 auto;width: 160px;
     }
 #headerWrap h1 a{color:#333}  
 
 #headerWrap .toggle{
     width: 48px;height: 48px;
     border: 1px solid #cdcdcd;
-    position: absolute;
-    left:calc( 50% + 980px / 2 - 48px );top:38px;
+    position: absolute;right: 0;top: 14px;
     cursor:pointer
 }
 .toggle div{
@@ -35,6 +35,7 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 }
 .toggle div:first-child{top:calc( 50% - 9px)}
 .toggle div:last-child{top:calc( 50% + 7px)}
+
 
 
 .mainMenuWrap{background-color: #1D5DA4;}
@@ -52,12 +53,9 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 }
 
 
-/* visual */
+
+/* visual  */
 .visualWrap{
-    /* background-image: url(../images/main_bg01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #213C6B; */
     background:#213C6B url(../images/main_bg01.jpg) no-repeat center;
 }
 .visualWrap .visual{
@@ -76,7 +74,6 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 .visualWrap .visual img{position: absolute;right: 0;}
 
 
-/* banWrap */
 .banWrap{background-color: #eee;margin-bottom: 25px;}
 .banWrap .banner{width: 980px;margin: 0 auto;text-align: center;color:#fff}
 .banWrap .banner li{
@@ -93,7 +90,7 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 .banWrap .banner li:nth-child(4){background-color: #3DB5F2;}
 .banWrap .banner li:nth-child(5){background-color: #95C8FF;}
 
-/* container  */
+
 .container{width: 980px;margin: 0 auto}
 .container.sec01{margin-bottom: 25px;}
 .container.sec01 li,
@@ -135,33 +132,43 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 
 
 
-/* footer  */
-.footerWrap{background-color: #5E5E5E;}
-.footerTop{background-color: #4D4D4D;}
-.container.footer .ftNav{float: left;}
-.container.footer .topMove{float: right;width:60px;height: 45px;background-color: #404040;}
-.ftNav li{float: left;position: relative;}
-.ftNav li:after{
-    content:"";display: block;width: 1px;height: 13px;
-    background-color: #ccc;position: absolute;right: 0;top: 17px;
-}
-/* .ftNav li:first-child:before{
-    content:"";display: block;width: 1px;height: 13px;
-    background-color: #ccc;position: absolute;left: 0;top: 17px;
-} */
+@media screen and (max-width:720px){
+    /* header  */
+    /* #headerWrap{padding:16px 0;} */
+    #headerWrap .center{width: 100%;}
+    .headerTopWrap{display: none;}
+    #headerWrap .toggle{right:16px;top: 16px;}
+    .mainMenuWrap{display: none;}
 
-.ftNav li:last-child:after{display: none;}
-.ftNav li:first-child a{padding-left: 0;}
+    /* visual  */
+    .visualWrap .visual{width: 100%;height:350px;}
+    .visualWrap .visual .txt{left: 16px;top: 30px;}
+    .visualWrap .visual h3{font-size: 50px;line-height: 60px;}
+    .visualWrap .visual img{width: 300px;bottom: -50px;right:-40px;}
 
-.ftNav li a{
-    display: block;padding: 16px 18px;font-size: 13px;
-    color:#ccc;line-height: 13px;
-}
-.container.footer .topMove a{display: block;line-height: 45px;padding-top: 11px;}
-.container.footer .topMove img{margin: 0 auto;}
-.container.ftBottom{padding: 20px 0;}
-.container.ftBottom div{float: left;font-size: 13px;color:#ccc}
-.container.ftBottom .logo{
-    width: 100px;height: 100px;text-align: center;line-height: 100px;
-    margin-right: 20px;
+    /* banner Wrap */
+    .banWrap .banner{width: 100%;}
+    .banWrap .banner li{width: 50%}
+    .banWrap .banner li:last-child{width: 100%;}
+
+    /* container */
+    .container{width: 100%;padding: 0 16px;}
+    .container.sec01 li,.container.sec02 li{
+        width: calc((100% - 20px) / 2);margin-right: 20px;
+        position: relative;
+    }
+    .container.sec01 li:nth-child(2),
+    .container.sec02 li:nth-child(2){margin-right: 0px;}
+
+    .container.sec01 li:last-child,
+    .container.sec02 li:last-child{display: none;}
+
+    .container.sec01 li .txt{position: absolute;
+        bottom: 10px; left: 16px;
+        border: 0 none;
+        padding: 0;
+        color: white;
+        text-shadow: 0 0 10px rgba(0,0,0,1);
+    }
+    .container.sec01 li .txt p{display: none;}
 }
