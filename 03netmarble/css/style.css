@@ -36,7 +36,7 @@
 
 
 .midtxtWrap{width: 100%;background-color: grey;}
-.midtxt{width: 1280px;margin: 0 auto;padding: 20px;background-color: pink;}
+.midtxt{width: 1280px;margin: 0 auto;padding: 100px 20px;background-color: pink;}
 .midtxt h3{font-size: 44px;margin-bottom: 20px;}
 .midtxt h3::after{
     content: "";display: block;width: 100px;height: 5px;
@@ -45,23 +45,62 @@
 }
 .midtxt li{font-size: 18px;line-height: 28px;float: right;}
 
-.container{width: 1280px;margin: 0 auto;padding: 0 20px;}
+.container{width: 1280px;margin: 0 auto;padding: 0 20px;margin-bottom: 200px;}
 .container li{float: left;width: calc((1240px - 20px * 2) / 3); margin-right: 20px;}
 .container li:last-child{margin-right: 0px;}
 
-.container li:hover img{
+.container li img:hover{
     transform: translate(0,-20px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .container li img{transition: 0.3s;margin-bottom: 20px;}
 .container .cardTxt h4{font-size: 21px;margin-bottom: 20px;}
-.container .cardTxt p{font-size: 15px;line-height: 24px;margin-bottom: 200px;}
+.container .cardTxt p{font-size: 15px;line-height: 24px;}
 
 
-.sectionWrap{width: 1280px;margin: 0 auto;padding: 0 20px;position: relative;height: 462px;}
+.sectionWrap{width: 1280px;margin: 0 auto;padding: 0 20px;position: relative;height: 462px;margin-bottom: 150px;}
 .section{width: 1114px;height: 338px;background-color: #ffd44a;}
 .section h5{font-size: 28px;margin-bottom: 20px;}
 .section p{font-size: 15px;}
 .section .txtWrap{position: absolute;left: 60px;top: 100px;}
-.section img{position: absolute;right: 0;bottom:0px;}
+.sectionWrap img{position: absolute;right: 0;bottom:0;}
+
+.secWrap{width: 100%;background-color:#f7f8f9;}
+.sec{width: 1280px;margin: 0 auto;padding: 150px 20px; background-color: pink;}
+.sec h6{font-size: 44px;}
+.sec h6::after{
+    content: "";display: block;width: 100px;height: 5px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.sec .box{
+    width: 360px;height: 466px;background-color: #fff;border-radius: 10px;
+    padding: 20px;
+}
+.sec .box:hover{
+    transform: translate(0,-20px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.sec .box{transition: 0.3s;}
+.sec li{
+    float: left;width: calc((1240px - 20px * 2) / 3); margin-right: 20px;
+}
+.sec li:last-child{margin-right: 0;}
+.sec li div{font-size: 21px;margin-bottom: 10px;}
+.sec li p{font-size: 15px;color: #1e1e1e;}
 
 
+.fotterWrap{width: 100%;padding: 50px 0; background-color: #1e1e1e;}
+.fotter{width: 1280px;margin: 0 auto;padding: 0 20px;background-color: #1e1e1e;}
+.fotter h6{margin-bottom: 30px;}
+.fotter p{font-size: 11px;color: #e1e1e1;margin-bottom: 50px;}
+.fotter li a{font-size: 12px;color: #e1e1e1;display: block;text-align: center;}
+.fotter li{float: left;border-right: 1px solid #e1e1e1;}
+.fotter li a{padding: 0 20px;}
+.fotter li:last-child{border-right: none;}
+.fotter li:first-child a{padding-left: 0;}
+
+
+h3{font-size: 44px !important;}
+.line::after{
+    content: "";display: block;width: 100px;height: 5px;
+    background-color: orange;
+}
