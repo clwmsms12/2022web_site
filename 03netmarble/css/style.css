@@ -65,7 +65,7 @@
 .sectionWrap img{position: absolute;right: 0;bottom:0;}
 
 .secWrap{width: 100%;background-color:#f7f8f9;}
-.sec{width: 1280px;margin: 0 auto;padding: 150px 20px; background-color: pink;}
+.sec{width: 1280px;margin: 0 auto;padding: 150px 20px;-}
 .sec h6{font-size: 44px;}
 .sec h6::after{
     content: "";display: block;width: 100px;height: 5px;
