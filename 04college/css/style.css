@@ -5,7 +5,7 @@
 .headerTop{width: 1200px;margin: 0 auto;}
 .headerTop .collMenu{float: left;}
 .headerTop .collMenu li{
-    float: left;width: calc(400px / 3);background-color: #ec008c;
+    float: left;width: calc(300px / 3);background-color: #ec008c;
     margin-right: 3px;
 }
 .headerTop .collMenu li a{
@@ -29,7 +29,50 @@
 }
 .headerTop .utilMenu li:nth-child(2) a:last-child{margin-right: 0;}
 
-.headerMein{width: 1200px;margin: 0 auto;}
+.headerMein{width: 1200px;margin: 0 auto;position: relative;}
 .headerMein img{padding: 30px 40px;height: 100px;background-color: pink;float: left;}
-.headerMein .meinMenu{float: right;}
-.headerMein .meinMenu li{float: left;}
+.headerMein .meinMenu{float: right;position:absolute;right: 150px;}
+.headerMein .meinMenu li{
+    float: left;width: calc(700px / 5);background-color:skyblue;
+    line-height: 100px;text-align: center;font-size: 18px;
+}
+
+.headerMein .navToggle{float: right;}
+.headerMein .navToggle li{float: left;}
+.headerMein .navToggle li img{
+    width: 45px;height: 45px;padding: 0;
+    margin-top: 25px; margin-right: 25px;cursor: pointer;
+}
+.headerMein .navToggle li:nth-child(1) img{margin-right: 0px;}
+
+
+.section{padding: 70px 0;height: 1300px;
+    background-image: url(../images/dot.png),url(../images/meinBGI.jpg);
+    background-repeat: repeat,no-repeat;
+    background-position: center;
+    background-size: auto,cover;
+}
+.section .sec1st{background-color: skyblue;width: 1200px;margin: 0 auto;}
+.section .sec1st .txtWrap{float: left;margin-bottom: 50px;}
+.section .sec1st .txtWrap h2.title{margin-bottom: 10px;}
+.section .sec1st .txtWrap h2 .bold{color:#ec008c;font-weight: bold;}
+.section .sec1st h2{color: white;font-size: 40px;font-weight: initial;}
+
+.section .sec1st ul{float: right;}
+.section .sec1st li{float: left;margin-right: 20px;cursor: pointer;}
+.section .sec1st li:last-child{margin-right: 0;}
+.section .sec1st li h3{color: #fff;font-size: 14px;text-align: center;}
+.section .sec1st li img{margin-bottom: 10px;}
+
+.section .sec2st{width: 1200px;margin: 0 auto;}
+.section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
+.section .sec2st>ul>li:nth-child(2n){background-color: pink;}
+
+.section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;}
+.section .sec2st>ul>li:nth-child(2){height: 450px;}
+.section .sec2st>ul>li:nth-child(3){}
+.section .sec2st>ul>li:nth-child(4){}
+.section .sec2st>ul>li:nth-child(5){}
+.section .sec2st>ul>li:nth-child(6){}
+.section .sec2st>ul>li:nth-child(7){}
+.section .sec2st>ul>li:nth-child(8){width: 900px;}
