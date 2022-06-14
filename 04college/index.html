@@ -13,6 +13,11 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            $(".slide").bxSlider()
+        })
+    </script>
 </head>
 <body>
     <header class="header">
@@ -75,12 +80,45 @@
         </div>
         <div class="sec2st">
             <ul class="clearfix">
-                <li>1</li>
-                <li>2</li>
-                <li class="box3">
+                <li>
+                    <ul class="slide">
+                        <li class="txtWrap">
+                            <div class="txt">
+                                <h2><span class="bold">한국</span>에서<br><span class="bold">시작</span>하는<br>새로운 <span class="bold">꿈</span></h2>
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div>
+                            <img src="images/bg_section01.jpg" alt="">
+                        </li>
+                        <li><img src="images/bg_section01.jpg" alt=""></li>
+                        <li><img src="images/bg_section01.jpg" alt=""></li>
+                    </ul>
+                    
+                    
+                    <div class="next">
+                        <img src="images/RR.png" alt="">
+                    </div>
+                    <div class="prev">
+                        <img src="images/LL.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="txt">
+                        <h3><span class="color">APP</span>으로<br><span class="color">스마트 도서관</span><br>바로이용하자!</h3>
+                        <a href="#" class="btn2">자세히 보기</a>
+                    </div><img src="images/bg_section02.jpg" alt="">
+                </li>
+                <li class="box3 clearfix">
                     <h4>HOT LINK</h4>
                     <div class="boxIcon">
                         <img src="images/boxicon01.jpg" alt="">
+                        <h5>국제교류<br>센터</h5>
+                    </div>
+                    <div class="boxIcon">
+                        <img src="images/boxicon02.jpg" alt="">
+                        <h5>국제교류<br>센터</h5>
+                    </div>
+                    <div class="boxIcon">
+                        <img src="images/boxicon03.jpg" alt="">
                         <h5>국제교류<br>센터</h5>
                     </div>
                 </li>

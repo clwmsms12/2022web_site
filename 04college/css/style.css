@@ -68,11 +68,58 @@
 .section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
 .section .sec2st>ul>li:nth-child(2n){background-color: pink;}
 
-.section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;}
-.section .sec2st>ul>li:nth-child(2){height: 450px;}
+.section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;position: relative;}
+.section .sec2st>ul .next,
+.section .sec2st>ul .prev{position: absolute;top: 50%;margin-top: -50px;cursor:pointer}
+.section .sec2st>ul .next{right: 0;}
+
+.section .sec2st .slide li h2{
+    font-size: 50px;font-weight: initial;position: absolute;text-align: center;
+    color: #004185;left: 50%;transform: translateX(-50%);top: 70px;
+}
+.section .sec2st .slide li h2 .bold{font-weight: bold;}
+.section .sec2st .slide li a{
+    position: absolute;left: 50%;transform: translateX(-50%);
+    background-color: #004185;color: #fff;padding: 5px 30px;
+    border-radius: 10px;font-size: 10px;bottom: 125px;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 none;
+    margin-bottom: 0;
+}
+.bx-wrapper .bx-pager{
+    top: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active, 
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #f00;
+}
+
+.section .sec2st>ul>li:nth-child(2){height: 450px;position: relative;}
+.section .sec2st .txt h3{
+    font-size: 30px;color: #fff;line-height: 35px; position: absolute;
+    left: 40px;top: 40px;
+}
+.section .sec2st .txt h3 .color{color: #ec008c;}
+.section .sec2st .txt a{
+    position: absolute;left: 50%;transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);color: #fff;padding: 5px 30px;
+    border-radius: 10px;font-size: 10px;bottom: 125px;border: 1px solid #fff;
+}
+
 .section .sec2st>ul>li:nth-child(3){padding: 30px;font-size: 24px;
     background-color: #ec008c;color: #fff;
 }
+.section .sec2st .box3 h4{margin-bottom: 20px;}
+.section .sec2st .box3 img{margin-bottom: 10px;}
+.section .sec2st .box3 .boxIcon{float: left;width: calc(100% / 3);}
+
+.section .sec2st .box3 h5{display: inline-block;text-align: center;width: 55px;}
 .section .sec2st>ul>li:nth-child(3) img{border-radius: 50%;}
 .section .sec2st>ul>li:nth-child(3) h5{font-size: 12px;}
 .section .sec2st>ul>li:nth-child(4){padding: 30px;font-size: 24px;}
