@@ -70,9 +70,13 @@
 
 .section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;}
 .section .sec2st>ul>li:nth-child(2){height: 450px;}
-.section .sec2st>ul>li:nth-child(3){}
-.section .sec2st>ul>li:nth-child(4){}
-.section .sec2st>ul>li:nth-child(5){}
+.section .sec2st>ul>li:nth-child(3){padding: 30px;font-size: 24px;
+    background-color: #ec008c;color: #fff;
+}
+.section .sec2st>ul>li:nth-child(3) img{border-radius: 50%;}
+.section .sec2st>ul>li:nth-child(3) h5{font-size: 12px;}
+.section .sec2st>ul>li:nth-child(4){padding: 30px;font-size: 24px;}
+.section .sec2st>ul>li:nth-child(5){padding: 30px;font-size: 24px;}
 .section .sec2st>ul>li:nth-child(6){}
 .section .sec2st>ul>li:nth-child(7){}
 .section .sec2st>ul>li:nth-child(8){width: 900px;}
