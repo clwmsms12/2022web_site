@@ -30,10 +30,10 @@
 .headerTop .utilMenu li:nth-child(2) a:last-child{margin-right: 0;}
 
 .headerMein{width: 1200px;margin: 0 auto;position: relative;}
-.headerMein img{padding: 30px 40px;height: 100px;background-color: pink;float: left;}
+.headerMein img{padding: 30px 40px;height: 100px;float: left;}
 .headerMein .meinMenu{float: right;position:absolute;right: 150px;}
 .headerMein .meinMenu li{
-    float: left;width: calc(700px / 5);background-color:skyblue;
+    float: left;width: calc(700px / 5);
     line-height: 100px;text-align: center;font-size: 18px;
 }
 
@@ -52,7 +52,7 @@
     background-position: center;
     background-size: auto,cover;
 }
-.section .sec1st{background-color: skyblue;width: 1200px;margin: 0 auto;}
+.section .sec1st{width: 1200px;margin: 0 auto;}
 .section .sec1st .txtWrap{float: left;margin-bottom: 50px;}
 .section .sec1st .txtWrap h2.title{margin-bottom: 10px;}
 .section .sec1st .txtWrap h2 .bold{color:#ec008c;font-weight: bold;}
@@ -67,6 +67,7 @@
 .section .sec2st{width: 1200px;margin: 0 auto;}
 .section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
 
+/* sec box1 */
 .section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;position: relative;}
 .section .sec2st>ul .next,
 .section .sec2st>ul .prev{position: absolute;top: 50%;margin-top: -50px;cursor:pointer}
@@ -100,6 +101,7 @@
     background: #f00;
 }
 
+/* sec box2 */
 .section .sec2st>ul>li:nth-child(2){height: 450px;position: relative;}
 .section .sec2st .txt h3{
     font-size: 30px;color: #fff;line-height: 35px; position: absolute;
@@ -112,17 +114,19 @@
     border-radius: 10px;font-size: 10px;bottom: 125px;border: 1px solid #fff;
 }
 
+/* sec box3 */
 .section .sec2st>ul>li:nth-child(3){padding: 30px;font-size: 24px;
     background-color: #ec008c;color: #fff;
 }
 .section .sec2st .box3 h4{margin-bottom: 20px;}
 .section .sec2st .box3 img{display: block;margin: 0 auto;margin-bottom: 10px;}
 .section .sec2st .box3 .boxIcon{float: left;width: calc(100% / 3);}
-
 .section .sec2st .box3 h5{text-align: center;}
+
 .section .sec2st>ul>li:nth-child(3) img{border-radius: 50%;}
 .section .sec2st>ul>li:nth-child(3) h5{font-size: 12px;}
 
+/* sec box4 */
 .section .sec2st>ul>li:nth-child(4){padding: 30px;font-size: 24px;background-color: #004185;}
 .section .sec2st>ul>li:nth-child(4) h4{margin-bottom: 10px;color: #fff;}
 .section .sec2st>ul>li:nth-child(4) .bar{height: 3px;background-color: #fff;margin-bottom: 10px;}
@@ -137,6 +141,7 @@
 .section .sec2st>ul>li:nth-child(4) .notice li a{display: block;text-indent: 7px;position: relative;}
 .section .sec2st>ul>li:nth-child(4) .notice li span{display: block;position: absolute;top: 0;right: 0;}
 
+/* sec box5 */
 .section .sec2st>ul>li:nth-child(5){padding: 30px;background-color: #fff;}
 .section .sec2st>ul>li:nth-child(5) h4{font-size: 24px;margin-bottom: 10px;}
 .section .sec2st>ul>li:nth-child(5) img{float: left;}
@@ -144,6 +149,7 @@
 .section .sec2st>ul>li:nth-child(5) ul{float: right;}
 .section .sec2st>ul>li:nth-child(5) li{float: left;margin-right: 4px;}
 
+/* sec box6 */
 .section .sec2st>ul>li:nth-child(6){position: relative;}
 .section .sec2st>ul>li:nth-child(6) a{
     width: 300px;height: 60px;
@@ -152,17 +158,55 @@
     font-size: 20px;
     position: absolute;bottom: 0;
 }
+
+/* sec box7 */
 .section .sec2st>ul>li:nth-child(7){position: relative;}
 .section .sec2st>ul>li:nth-child(7) .click img{
     position: absolute;
     left: 50%;top: 50%; transform: translate(-50%,-50%);
+    animation-name: click;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
+@keyframes click {
+    0%{transform: scale(1)translate(-50%,-50%)}
+    100%{transform: scale(1.5)translate(-50%,-50%)}
+}
+
+/* sec box8 */
 .section .sec2st>ul>li:nth-child(8){width: 900px;position: relative}
 .section .sec2st>ul>li:nth-child(8) h3{font-size: 35px;color: #ec008c;font-weight: initial;}
-.section .sec2st>ul>li:nth-child(8) h2{font-size: 40px;color: #ec008c;}
-.section .sec2st>ul>li:nth-child(8) a{
+.section .sec2st>ul>li:nth-child(8) h2{font-size: 40px;color: #ec008c;margin-bottom: 20px;}
+.section .sec2st>ul>li:nth-child(8) .btn3{
     padding: 5px 30px;background-color: #ec008c;color: #fff;
     border-radius: 10px;
 }
-.section .sec2st>ul>li:nth-child(8) .texts{position: absolute;}
+.section .sec2st>ul>li:nth-child(8) .texts{position: absolute;top: 30px;left: 30px;}
 
+.box8 .bx-wrapper .bx-pager{
+    top: 20px;width: 90px;height: 40px;
+    left:initial; right: 30px;
+}
+.box8 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.box8 .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.box8 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: rgb(56, 248, 7);
+}
+.box8 .bx-wrapper .bx-pager.bx-default-pager a{transition: 0.3s;}
+.box8 .bx-wrapper .bx-pager.bx-default-pager a.active{width: 30px;}
+
+.fotter{width: 1200px;margin: 0 auto;padding: 30px;}
+.fotter .imgWrap{
+    float: left;
+    width: 270px;height: 165px;
+    display: flex;justify-content: center;align-items: center;
+    border-right: 1px solid gray;
+    margin-right: 10px;
+}
+.fotter ul{display: flex;justify-content: space-between;margin-bottom: 20px;}
+.fotter ul .line{color: gray;}
+.fotter p{font-size: 15px;line-height: 30px;color: #ccc;}
