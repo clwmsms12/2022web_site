@@ -163,7 +163,7 @@
 .section .sec2st>ul>li:nth-child(7){position: relative;}
 .section .sec2st>ul>li:nth-child(7) .click img{
     position: absolute;
-    left: 50%;top: 50%; transform: translate(-50%,-50%);
+    left: 50%;top: 50%; 
     animation-name: click;
     animation-duration: 1s;
 
@@ -173,8 +173,8 @@
     animation-timing-function: linear;
 }
 @keyframes click {
-    0%{transform: scale(1)translate(-50%,-50%)}
-    100%{transform: scale(1.5)translate(-50%,-50%)}
+    0%{transform: translate(-50%,-50%) scale(1) }
+    100%{transform: translate(-50%,-50%) scale(1.2) }
 }
 
 /* sec box8 */
