@@ -18,16 +18,18 @@
 
     <script>
         $(document).ready(function(){
-            $(".slide").bxSlider()
+            $(".slide").bxSlider();
+
+            $(".slide2").bxSlider({controls:false});
 
             $(".modal").colorbox({
                 rel:'modal'
-            })
+            });
             $(".youtube").colorbox({
                 iframe:true,
                 innerWidth:700,
                 innerHeight:394
-            })
+            });
         })
     </script>
 </head>
@@ -101,8 +103,20 @@
                             </div>
                             <img src="images/bg_section01.jpg" alt="">
                         </li>
-                        <li><img src="images/bg_section01.jpg" alt=""></li>
-                        <li><img src="images/bg_section01.jpg" alt=""></li>
+                        <li class="txtWrap">
+                            <div class="txt">
+                                <h2><span class="bold">한국</span>에서<br><span class="bold">시작</span>하는<br>새로운 <span class="bold">꿈</span></h2>
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div>
+                            <img src="images/bg_section01.jpg" alt="">
+                        </li>
+                        <li class="txtWrap">
+                            <div class="txt">
+                                <h2><span class="bold">한국</span>에서<br><span class="bold">시작</span>하는<br>새로운 <span class="bold">꿈</span></h2>
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div>
+                            <img src="images/bg_section01.jpg" alt="">
+                        </li>
                     </ul>
                     
                     
@@ -170,7 +184,7 @@
                     <img src="images/seven.jpg" alt="">
                 </li>
                 <li class="box8">
-                    <div class="slide">
+                    <div class="slide2">
                         <div class="slideItem">
                             <div class="texts">
                                 <h3>2022년 신/편입생 2차 모집</h3>
