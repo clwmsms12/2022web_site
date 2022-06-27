@@ -4,7 +4,8 @@ h2{font-size: 66px;}
 h3{font-size: 32px;}
 h4{font-size: 20px;}
 h5{font-size: 18px;}
-h6{font-size: 17px;}
+h6{font-size: 17px; color: #fff;}
+.won{font-size: 17px;color: #70C466;}
 
 .headerWrap{
     background-image: url(../images/mein_top_bg_01.png);background-color:#0D72A6;
@@ -33,14 +34,83 @@ p.title{left: 10px;font-weight: bold;}
 
 .sectionWrap{position: relative;}
 .video{position: absolute;left: 50%;transform: translateX(-50%);}
+
+/* section */
 .section{
     width: 980px;height: 1170px;position: absolute;
     left: 50%;transform: translateX(-50%);
 }
 .section .sec01{
-    width: 980px;height: 558px;background-color: #000;
-    position: absolute;top: 20px;
+    width: 980px;height: 558px;
+    position: absolute;top: 4px;
+}
+.sec01 .box{
+    width: 234px;height: 242px;
+    background-image: url(../images/03heng01.jpg);
+    position: absolute;bottom: 0;
+}
+.sec01 .box .boxer,
+.sec01 .box2 .boxer{
+    width: 234px;height: 50px;background-color: #152630;
+    position: absolute;bottom: 0;
+}
+.sec01 .box .boxer h6{
+    position: absolute;top: 50%;transform: translateY(-50%);left: 15px;
+}
+.sec01 .box .boxer .won{
+    position: absolute;right: 0;transform: translateY(-50%);top: 50%;
 }
 
+.sec01 .box2{
+    width: 234px;height: 242px;
+    background-image: url(../images/03heng02.jpg);
+    position: absolute;bottom: 0;left: 250px;
+}
+.sec01 .box2 .boxer h6{
+    position: absolute;top: 50%;transform: translateY(-50%);left: 15px;
+}
+.sec01 .box2 .boxer .won{
+    position: absolute;right: 0;transform: translateY(-50%);top: 50%;
+}
+.sec01 h2{position: absolute;right: 150px;top: 10px;}
+.sec01 .line{
+    border-bottom: 6px solid #000;
+}
+.sec01 h3{position: absolute;right: 70px;top: 110px;}
 
-
+.sec02 .contaner{width: 980px;height: 500px;background-color: #eee;
+position: absolute;bottom: 100px;}
+.sec02 .box01{width: 234px;height: 242px;background-color: #000;position: absolute;}
+.sec02 .box02{
+    width: 234px;height: 242px;background-color: #000;
+    position: absolute;left: 250px;
+}
+.sec02 .box03{
+    width: 234px;height: 242px;background-image: url(../images/03heng05.jpg);
+    overflow: hidden;
+    position: absolute;right: 248px;
+}
+.sec02 .box03 .box{
+    width: 234px;height: 60px;background-color: red;
+    position: absolute;bottom: 0;padding: 8px 15px;
+}
+.sec02 .box04{
+    width: 234px;height: 242px;background-color: #000;
+    position: absolute;right: 0;
+}
+.sec02 .box05{
+    width: 234px;height: 242px;background-image: url(../images/03heng07.jpg);
+    position: absolute;bottom: 0;
+}
+.sec02 .box06{
+    width: 234px;height: 242px;background-color: #000;
+    position: absolute;left: 250px;bottom: 0;
+}
+.sec02 .box07{
+    width: 234px;height: 242px;background-color: #000;
+    position: absolute;right: 248px;bottom: 0;
+}
+.sec02 .box08{
+    width: 234px;height: 242px;background-color: #000;
+    position: absolute;right: 0;bottom: 0;
+}
