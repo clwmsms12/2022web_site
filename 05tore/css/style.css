@@ -33,7 +33,20 @@ p.title{left: 10px;font-weight: bold;}
 .topMenu h5:last-child{border-right: 1px solid gray;}
 
 .sectionWrap{position: relative;}
-.video{position: absolute;left: 50%;transform: translateX(-50%);}
+.video{position: absolute;left: 50%;transform: translateX(-50%);overflow: hidden;}
+.video>img{
+    position: absolute;bottom: -230px;left: -230px;
+    animation-name: air;
+    animation-duration: 5s;
+
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes air {
+    0%{transform: translate(-850px,0);}
+    100%{transform: translate(2100px,-1400px);}
+}
 
 /* section */
 .section{
@@ -44,10 +57,45 @@ p.title{left: 10px;font-weight: bold;}
     width: 980px;height: 558px;
     position: absolute;top: 4px;
 }
+.section .sec01>img{
+    position: absolute;right: 100px;top: 200px; z-index: -10;
+    animation-name: sam;
+    animation-duration: 3s;
+
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes sam {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-30px);}
+}
+.sec01 .form{width: 484px;height: 305px;background-color: #fff;}
 .sec01 .box{
     width: 234px;height: 242px;
     background-image: url(../images/03heng01.jpg);
     position: absolute;bottom: 0;
+}
+.sec01 .box .plain1{
+    position: absolute;left: -300px;top: -100px;
+}
+.sec01 .box .plain2{
+    position: absolute;left: -400px;top: -170px;
+}
+.sec01 .box .plain1,
+.sec01 .box .plain2{
+    animation-name: plain;
+    animation-duration: 3s;
+
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes  plain{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-20px);}
 }
 .sec01 .box .boxer,
 .sec01 .box2 .boxer{
@@ -78,39 +126,64 @@ p.title{left: 10px;font-weight: bold;}
 }
 .sec01 h3{position: absolute;right: 70px;top: 110px;}
 
-.sec02 .contaner{width: 980px;height: 500px;background-color: #eee;
+.sec02 .contaner{width: 980px;height: 500px;
 position: absolute;bottom: 100px;}
-.sec02 .box01{width: 234px;height: 242px;background-color: #000;position: absolute;}
+.sec02 .box01{width: 234px;height: 242px;position: absolute;}
+.sec02 .box01 .secbt{
+    width: 234px;height: 60px;background-color: #529351;
+    position: absolute;bottom: 0;
+    display: flex;justify-content: center;align-items: center;
+}
+.sec02 .swiper-wrapper{height: 242px;}
 .sec02 .box02{
     width: 234px;height: 242px;background-color: #000;
     position: absolute;left: 250px;
 }
+.sec02 .box02 .secbt{
+    width: 234px;height: 60px;background-color: #152630;
+    position: absolute;bottom: 0;
+    display: flex;justify-content: center;align-items: center;
+}
 .sec02 .box03{
-    width: 234px;height: 242px;background-image: url(../images/03heng05.jpg);
-    overflow: hidden;
+    width: 234px;height: 242px;
     position: absolute;right: 248px;
 }
+.sec02 .box03>img{width: 234px;height: 242px;}
 .sec02 .box03 .box{
-    width: 234px;height: 60px;background-color: red;
+    width: 234px;height: 60px;
     position: absolute;bottom: 0;padding: 8px 15px;
+    background-color: #000;opacity: 0.5;
 }
+.sec02 .box03 .box>h6,
+.sec02 .box03 .box>p{color: #fff;}
 .sec02 .box04{
     width: 234px;height: 242px;background-color: #000;
     position: absolute;right: 0;
 }
+.sec02 .box04>p{position: absolute;top: 15px;font-size: 15px;left: 8px;}
+.sec02 .box04 .box{
+    width: 234px;height: 60px;color: #fff;
+    position: absolute;bottom: 0;padding: 8px 15px;
+    background-color: #44619D;
+}
 .sec02 .box05{
-    width: 234px;height: 242px;background-image: url(../images/03heng07.jpg);
-    position: absolute;bottom: 0;
+    width: 234px;height: 242px;
+    position: absolute;bottom: 0;background-image: url(../images/03heng07.jpg);
+    background-position: left;
 }
 .sec02 .box06{
-    width: 234px;height: 242px;background-color: #000;
+    width: 234px;height: 242px;background-image: url(../images/03heng08.jpg);
     position: absolute;left: 250px;bottom: 0;
+    background-position: center;
 }
 .sec02 .box07{
-    width: 234px;height: 242px;background-color: #000;
+    width: 234px;height: 242px;background-image: url(../images/03heng09.jpg);
     position: absolute;right: 248px;bottom: 0;
+    background-position: left;
 }
 .sec02 .box08{
-    width: 234px;height: 242px;background-color: #000;
+    width: 234px;height: 242px;background-image: url(../images/03heng10.jpg);
     position: absolute;right: 0;bottom: 0;
+    background-position: -140px;
 }
+
