@@ -355,8 +355,36 @@ position: absolute;bottom: 100px;}
 }
 
 /* sub02 */
+.sectionWrap.tour2 .visual .topV{
+    background-image: url(../images/event_top_visual.jpg);
+    height: 400px
+}
+.tour2 .visual .con02{
+    background-image: url(../images/event.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
+}
+
+/* sub03 */
+.sectionWrap.tour3 .visual .topV03{
+    background-image: url(../images/visual2.jpg);
+    height: 350px;
+}
+.tour3 .visual .con03{
+    background-image: url(../images/sub03mm.PNG);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 950px;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) */
+}
 
 .footerWrap.sub{position: relative;bottom: -900px;height: 100px;background-color: #eee;}
+.footerWrap.sub2{position: relative;bottom: -20px;height: 100px;background-color: #eee;}
+.footerWrap.sub3{position: relative;bottom: -20px;height: 100px;background-color: #eee;}
 .footerWrap{position: relative;bottom: -1070px;height: 100px;background-color: #eee;}
 .footer{
     width: 980px;height: 100px; margin: 0 auto;background-color: #eee;
