@@ -1,3 +1,13 @@
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset;
+
+    if(scrollY > 10){
+        $("#header").addClass("fixed");
+    }else{
+        $("#header").removeClass("fixed");
+    }
+})
+
 $(".navbar>ul>li").hover(function(){
     $(this).addClass("on");
 },function(){

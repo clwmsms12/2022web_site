@@ -9,13 +9,14 @@ h4{font-size: 48px;}
 h5{font-size: 24px;}
 p{font-size: 20px;}
 
-#header{background: #000;}
+/* header */
+#header{position: absolute;width: 100%;z-index: 100;}
+#header.fixed{position: fixed;background: #000;}
 .navbarWrap{
-    background: #000;
     display: flex;justify-content: space-between;align-items: center;
     padding: 10px 20px;
 }
-.navbarWrap h1{position: relative;z-index: 100;}
+.navbarWrap h1{position: relative;}
 .navbarWrap .test{
     font-size: 20px;width: 125px;height: 40px;
     display: flex;justify-content: center;align-items: center;
@@ -25,17 +26,17 @@ p{font-size: 20px;}
 }
 .navbar{}
 .navbar>ul{display: flex;height: 100%;}
-.navbar>ul>li{position: relative;}
+.navbar>ul>li{position: relative;height: 100%;}
 .navbar>ul>li>a{
     padding: 15px 40px;height: 100%;display: flex;
     font-size: 20px;font-weight: bold;color: white;
 }
 
 .navbar>ul>li .submenu{
-    position: absolute;top: 49px;visibility: hidden;
+    position: absolute;top: 57px;visibility: hidden;background: #000;
     padding: 8px;transform:translateY(20px);opacity:0;transition: 0.3s;width: 100%;
 }
-.submenu li{display: block;line-height: 30px;text-align: center;}
+.submenu li a{display: block;line-height: 40px;text-align: center;color: #fff;}
 .navbar>ul>li.on .submenu{transform:translateY(0px);opacity: 1;visibility: visible;}
 
 .toggle{
@@ -60,7 +61,17 @@ p{font-size: 20px;}
 .Mmenu.active{left: 0;}
 
 
-
+/* visual */
+.visual{}
+.visual .swiper-slide>img{
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide>.text{position: relative;}
+.swiper-slide>.text>img{position: absolute;top: 100px;left: 0;}
 
 
 /******* css responsive *******/
@@ -73,7 +84,7 @@ p{font-size: 20px;}
 }
 
 @media (max-width: 991px) {
-
+    .container{width: 100%;}
 }
 
 @media (max-width: 767px) {
@@ -82,6 +93,8 @@ p{font-size: 20px;}
     .navbarWrap>h1>img{width: 30px;}
     .navbarWrap .test{display: none;}
     .toggle{display: flex;}
+
+    .visual .swiper-slide>img{}
 }
 
 @media (max-width: 575px) {
