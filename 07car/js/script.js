@@ -27,3 +27,18 @@ $(".toggle").click(function(){
     }
 })
 $(".navbar>ul").clone().appendTo(".clone")
+
+$(".clone>ul>li>a").click(function(e){
+    e.preventDefault();
+
+    $(".clone>ul>li>a").parent().find(".submenu").hide()  //#3
+
+    if( $(this).hasClass("active") ){                 //#4
+        $(".clone>ul>li>a").removeClass("active");
+    }else{
+        $(this).parent().find(".submenu").show();
+        $(".clone>ul>li>a").removeClass("active")
+        $(this).addClass("active");
+
+    }
+})
