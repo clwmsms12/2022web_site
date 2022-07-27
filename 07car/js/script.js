@@ -42,3 +42,5 @@ $(".clone>ul>li>a").click(function(e){
 
     }
 })
+
+var swiper = new Swiper(".swiper01", {});
