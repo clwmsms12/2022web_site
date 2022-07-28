@@ -43,4 +43,11 @@ $(".clone>ul>li>a").click(function(e){
     }
 })
 
-var swiper = new Swiper(".swiper01", {});
+var swiper = new Swiper(".swiper01", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+});
+

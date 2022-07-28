@@ -1,9 +1,11 @@
 @charset "utf-8";
 /******* css responsive init *******/
-html,body{height: 100%;_overflow: hidden;}
+html,body{height: 100%;}
 .container{width: 1240px;margin: 0 auto;}
 .bg-primary{background-color: skyblue !important;}
 .h100p{height: 100% !important;}
+
+body{background: url(../images/secBG.jpg);}
 
 h2{font-size: 64px;color: #fff;}
 h3{font-size: 56px;color: #fff}
@@ -66,9 +68,9 @@ p{font-size: 20px;}
 
 
 /* visual */
-.visual{}
+.visual{overflow: hidden;}
 .visual .swiper-slide>img{
-    width: 100%;
+    width:100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,9 +85,24 @@ p{font-size: 20px;}
 .visual .meinText{background: #000;display: none;}
 
 /* section */
+.section{position: relative;z-index:300;margin-top: -100px;}
 .section .secBG{width: 100%;height: 100%;}
 .section .MsecBG{display: none;}
-
+.sectionItem{
+    background: skyblue;position: absolute;height: 100%;
+    top: 0;left: 50%;transform: translateX(-50%);
+}
+.sectionItem .conText{position: absolute;top: 100px;}
+.conText p{color: #fff;width: 500px;font-size: 19px;margin-top: 25px;}
+.sectionItem div:nth-child(2){position: absolute;right: 0;top: 0;}
+.sectionItem div:nth-child(3){position: absolute;left: 0;top: 300px;}
+.sectionItem div:nth-child(4){position: absolute;top: 620px;left: 87px;}
+.sectionItem div:nth-child(5){position: absolute;right: 110px;top: 540px;}
+.sectionItem div:nth-child(6){position: absolute;left: 222px;;top: 935px;}
+.sectionItem div:nth-child(7){position: absolute;right: 490px;;top: 795px;}
+.sectionItem div:nth-child(8){position: absolute;right: 230px;;top: 795px;}
+.sectionItem div:nth-child(9){position: absolute;right: 550px;;top: 1048px;}
+.sectionItemM{display: none;}
 
 /******* css responsive *******/
 @media (max-width: 1399px) {
@@ -103,7 +120,7 @@ p{font-size: 20px;}
 @media (max-width: 767px) {
     .container{width: 100%;}
 
-    #header{background: #000;}
+    #header{background: #000;border-bottom: 5px solid #c8c8c8;}
     .navbar{display: none;}
 
     .clone{
@@ -126,19 +143,29 @@ p{font-size: 20px;}
 
     .submenu{display: none;}
     
-
+    .visual{}
     .visual .mein{display: none;}
     .visual .Mmein{display: block;}
     .visual .swiper-slide>img{width: 100%;left: 0px;}
     .swiper-slide .itemWrap{top: 80px;left: 8px;}
     .swiper-slide>.text img{width: 100px;left: 8px;}
     .swiper-slide>.text h3{font-size: 32px;left: 8px;}
-    .visual .meinText{display: block;padding: 125px 8px;}
-    .visual .meinText h6{margin-bottom: 10px;font-size: 24px;}
-    .visual .meinText p{color: #fff;font-size: 17px;}
+    .visual .meinText{
+        display: block;padding: 210px 8px;background: #000;
+        margin-bottom: 125px;border-bottom: 5px solid #c8c8c8;
+    }
+    .visual .meinText h6{margin-bottom: 10px;font-size: 48px;}
+    .visual .meinText p{color: #fff;font-size: 24px;}
 
+    .section{position: relative;margin-bottom: 0px;}
     .section .secBG{display: none;}
-    .section .MsecBG{display: block;width: 100%;}
+    .section .MsecBG{display: block;width: 100%;position: absolute;z-index: -100;}
+
+    .sectionItem{display: none;}
+    .sectionItemM{display: block;}
+    .sectionItemM h4{display: flex;justify-content: center;padding: 80px 0;background: green;}
+    .sectionItemM .secItemM1 img{width: 100%;margin-bottom: 10px;}
+    .sectionItemM .secItemM img{width: 50%;}
 }
 
 @media (max-width: 575px) {
