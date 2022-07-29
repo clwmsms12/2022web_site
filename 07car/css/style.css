@@ -104,6 +104,9 @@ p{font-size: 20px;}
 .sectionItem div:nth-child(9){position: absolute;right: 550px;;top: 1048px;}
 .sectionItemM{display: none;}
 
+.section02Wrap{background-image: url(../images/viBG.jpg);}
+.sec02Text h4{font-weight: none;}
+
 /******* css responsive *******/
 @media (max-width: 1399px) {
 
@@ -111,16 +114,20 @@ p{font-size: 20px;}
 
 @media (max-width: 1199px) {
     .container{width: 100%;}
+
+    .sectionItem{display: none;}
 }
 
 @media (max-width: 991px) {
     .container{width: 100%;}
+
+    .sectionItem{display: none;}
 }
 
 @media (max-width: 767px) {
     .container{width: 100%;}
 
-    #header{background: #000;border-bottom: 5px solid #c8c8c8;}
+    #header{background: #000;border-bottom: 5px solid #c8c8c8;z-index: 9999;}
     .navbar{display: none;}
 
     .clone{
@@ -163,9 +170,38 @@ p{font-size: 20px;}
 
     .sectionItem{display: none;}
     .sectionItemM{display: block;}
-    .sectionItemM h4{display: flex;justify-content: center;padding: 80px 0;background: green;}
-    .sectionItemM .secItemM1 img{width: 100%;margin-bottom: 10px;}
-    .sectionItemM .secItemM img{width: 50%;}
+    .sectionItemM h4{display: flex;justify-content: center;padding: 80px 0;width: 100%;}
+    .sectionItemM .secItemM1{width: 100%;margin-bottom: 10px;}
+    
+
+    .sectionItemM{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap:10px;
+        overflow: hidden;
+    }
+    .sectionItemM .secItemM{
+        position: relative;
+        height:180px;
+        flex:1 1 40%;
+        overflow: hidden;
+    }
+
+    .sectionItemM div:nth-of-type(1){
+        flex-basis: 100%;
+    }
+
+    .sectionItemM>div>img{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+
+    }
+
 }
 
 @media (max-width: 575px) {
