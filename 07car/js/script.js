@@ -51,3 +51,21 @@ var swiper = new Swiper(".swiper01", {
       },
 });
 
+// var swiper = new Swiper(".section02", {
+//     slidesPerView: 2,
+//     spaceBetween: 30,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+
+var swiper = new Swiper(".carSwiper", {
+    pagination: {
+      el: ".carSwiper-page",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + ("") + "</span>";
+      },
+    },
+});
