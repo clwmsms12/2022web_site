@@ -60,6 +60,21 @@ var swiper = new Swiper(".swiper01", {
 //     },
 //   });
 
+$(".modal").click(function(event){
+    event.preventDefault();
+
+    let aModal = $(this).attr("href");
+    $(".glayLayer").css("display","flex");
+    $(".overLayer img").attr("src",aModal)
+})
+$(".xicon").click(function(){
+    $(this).parent().parent().hide()
+})
+$(".glayLayer").click(function(){
+    $(this).hide()
+})
+
+
 var swiper = new Swiper(".carSwiper", {
     pagination: {
       el: ".carSwiper-page",
