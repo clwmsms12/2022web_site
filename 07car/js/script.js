@@ -84,3 +84,8 @@ var swiper = new Swiper(".carSwiper", {
       },
     },
 });
+
+
+$(".Top").click(function(){
+    $("html,body").animate({scrollTop:0},300)
+})

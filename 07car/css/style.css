@@ -201,6 +201,27 @@ p{font-size: 20px;color: #fff;}
 .section05{position: relative;}
 .content .Cbg03{width: 50%;margin-bottom: 150px;}
 .content .Cbg04{width: 45%;position: absolute;right: 60px;}
+
+.section06Wrap{background: #000;}
+.section06{padding: 100px 0;display: flex;justify-content: space-between;}
+.section06 .jewon li{height: 120px;display: flex;align-items: center;}
+.section06 .jewon2 li{height: 120px;display: flex;align-items: center;justify-content: flex-end;}
+.section06 p{font-size: 30px;}
+
+.footerWrap{background: #444;padding: 30px 0;}
+.footer{display: flex;justify-content: space-between;}
+.footer img{width: 130px;height: 130px;}
+.footer h6{margin-bottom: 10px;}
+.footer p{font-size: 15px;line-height: 25px;}
+.footer .fLOGO{display: flex;align-items: center;}
+
+.Top{
+    width: 60px;height: 60px;background: #0066b1;
+    border-radius: 50%;
+    display: flex;justify-content: center;align-items: center;
+    position: fixed;right: 10px;bottom: 10px;
+}
+.Top i{color: #fff;font-size: 30px;}
 /******* css responsive *******/
 @media (max-width: 1399px) {
 
