@@ -8,6 +8,8 @@ $(window).scroll(function(){
     }
 })
 
+new WOW().init();
+
 $(".navbar>ul>li").hover(function(){
     $(this).addClass("on");
 },function(){

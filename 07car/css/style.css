@@ -4,7 +4,18 @@ html,body{height: 100%;}
 .container{width: 1240px;margin: 0 auto;}
 .bg-primary{background-color: skyblue !important;}
 .h100p{height: 100% !important;}
-.line{border-top: 1px solid #fff;width: 150px;margin: 10px 20px;}
+.lineWrap{height: 2px;;width: 150px;}
+.line{
+    height: 2px;width: 0px;background: #fff;margin: 13px 0;
+    animation-name: line;
+    animation-duration: 0s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes line {
+    to{width: 150px;}
+}
+
 
 body{
     background: url(../images/secBG.jpg);
@@ -175,13 +186,35 @@ p{font-size: 20px;color: #fff;}
     color: #fff;display: flex;justify-content: center;align-items: center;
     text-align: center;margin-bottom: 100px;
 }
+.section04 .barWrap{
+    height: 100px;width: 2px;
+    margin: 0 auto;
+}
 .section04 .bar{
-    border: 1px solid #fff;width: 1px;height: 100px;
+    width: 2px;height: 0px;background: #fff;
     margin: 0 auto;margin-top: 10px;
+    animation-name: bar;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes bar {
+    to{height: 100px;}
+}
+.section05 .barWrap{
+    height: 250px;width: 2px;
+    margin: 0 auto;
 }
 .section05 .bar2{
-    border: 1px solid #fff;width: 1px;height: 250px;
+    border: 1px solid #fff;width: 1px;height: 0px;
     margin: 0 auto;margin-top: 10px;
+    animation-name: bar2;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes bar2 {
+    to{height: 250px;}
 }
 .section04 .Cbg01{width: 60%;position: absolute;top: 400px;left: -300px;}
 .section04 .Cbg02{width: 80%;position: absolute;top: 1200px;right: -320px;}
@@ -194,7 +227,8 @@ p{font-size: 20px;color: #fff;}
 .content .textline03{display: flex;position: absolute;bottom: -970px;left: -220px;}
 .content .textline04{display: flex;position: absolute;top: -650px;left: 50px;}
 .content .textline05{display: flex;position: absolute;top: 220px;right: 150px;}
-.content .textline06{display: flex;position: absolute;top: 1050px;}
+.content .textline06{display: flex;position: absolute;top: 1050px;left: 50px;}
+.content .textC{margin-left: 10px;}
 
 .section05Wrap{padding: 100px 0;height: 3450px;background: #000;}
 .section05Wrap video{margin-bottom: 150px;}
@@ -217,11 +251,23 @@ p{font-size: 20px;color: #fff;}
 
 .Top{
     width: 60px;height: 60px;background: #0066b1;
-    border-radius: 50%;
+    border-radius: 50%;cursor: pointer;
     display: flex;justify-content: center;align-items: center;
     position: fixed;right: 10px;bottom: 10px;
+
+    animation-name: Top;
+    animation-duration: 0.8s;
+
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 .Top i{color: #fff;font-size: 30px;}
+@keyframes Top {
+    0%{transform: translateY(0);opacity: 0;}
+    100%{transform: translateY(-25px);opacity: 1;}
+}
 /******* css responsive *******/
 @media (max-width: 1399px) {
 
