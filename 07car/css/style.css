@@ -268,6 +268,23 @@ p{font-size: 20px;color: #fff;}
     0%{transform: translateY(0);opacity: 0;}
     100%{transform: translateY(-25px);opacity: 1;}
 }
+
+
+
+
+.sub01-section img{width: 100%;}
+.subWrap{background: #000;position: relative;}
+.sub{
+    position: absolute;left: 50%;transform: translateX(-50%);top: -50px;
+    z-index: 9999;
+}
+.sub .tab{display: flex;}
+.sub .tab li{
+    flex: 1 1 25%;height: 50px;
+    display: flex;justify-content: center;align-items: center;
+    background: #000;cursor: pointer;
+}
+.sub .tab li.active{background: #0066b1;}
 /******* css responsive *******/
 @media (max-width: 1399px) {
 
