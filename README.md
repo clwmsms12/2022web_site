@@ -5,3 +5,4 @@
 1. college https://clwmsms12.github.io/2022web_site/04college
 1. studio https://clwmsms12.github.io/2022web_site/05studio
 1. tore https://clwmsms12.github.io/2022web_site/06tore
+1. car https://clwmsms12.github.io/2022web_site/07car
