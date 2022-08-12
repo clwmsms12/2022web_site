@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        html,body{height: 100%;}
+        .todoList{
+            background: #eee;width: 450px;
+            position: absolute;left: 50%;top: 50%;
+            transform: translate(-50%,-50%);
+            padding: 20px;
+            border: 1px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .todoList .name{
+            text-align: center;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        .todoList .name p{font-size: 30px;}
+        .todoList .name .textTo{font-weight: bold;font-size: 60px;color: orange;}
+        .todoList .name .textLi{font-weight: bold;font-size: 60px;color: skyblue;}
+
+        .mytodo{width: 400px;margin: 10px auto;display: flex;height: 50px;gap: 5px;}
+        .mytodo .inp{flex-grow: 1;}
+        .mytodo .btn1{width: 70px;}
+        .mytodo .btn2{width: 70px;display: none;}
+
+
+        .listView{width: 400px;margin: 0 auto}
+        .listView li{
+            height: 40px;position: relative;margin-bottom: 5px;
+            border-bottom: 1px solid #000;
+        }
+        .listView li .item{
+            height: 100%;
+            display: flex;align-items: center;
+            padding-left: 10px;
+        }
+        .listView li .item.active{background: orange;}
+        .listView li .iconWrap{
+            position: absolute;right: 5px;top: 0;
+            display: flex;height: 100%;
+        }
+        .listView li .iconWrap i{
+            width: 40px;height: 40px;display: flex;
+            justify-content: center;align-items: center;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="todoList">
+        <div class="name">
+            <p>Today's</p>
+            <p class="textTo">TO DO</p>
+            <p class="textLi">LIST</p>
+        </div>
+        <div class="mytodo">
+            <input type="hidden" class="num">
+            <input type="text" class="inp">
+            <button class="btn1">등록</button>
+            <button class="btn2">수정</button>
+        </div>
+        <ul class="listView">
+
+        </ul>
+    </div>
+<script>
+    let listData = [];
+
+    const listView = document.querySelector(".listView");
+    const inp = document.querySelector(".inp");
+    const btn1 = document.querySelector(".btn1");
+    const btn2 = document.querySelector(".btn2");
+    const num = document.querySelector(".num");
+
+    btn1.addEventListener("click",function(){
+        let value = {"todo":inp.value,"done":false}
+
+        if(!inp.value){
+            alert("내용을 입력해 주세요!")
+        }else{
+        listData.push(value)
+        view("");
+
+        inp.value = "";
+        inp.focus();
+        }
+    })
+
+    btn2.addEventListener("click",function(){
+        listData[num.value].todo = inp.value;
+        btn1.style.display = "block";
+        btn2.style.display = "none";
+        inp.value = "";
+        view();
+    })
+
+    function view(){
+        let viewList = "";
+
+        listData.forEach(function(item,i){
+            viewList += `<li>`;
+
+            if( listData[i].done == true){
+                viewList += `<div class="item active" onclick="done(${i})">${listData[i].todo}</div>`
+            }else{
+                viewList += `<div class="item" onclick="done(${i})">${listData[i].todo}</div>`
+            }
+                               
+            viewList +=  `<div class="iconWrap">
+                                <i class="fa-solid fa-delete-left" onclick="del(${i})"></i>
+                                <i class="fa-solid fa-pen-to-square" onclick="mod(${i},'${listData[i].todo}')"></i>`;
+            if(listData[i].done == true){
+                viewList += `<i class="fa-solid fa-calendar-check" onclick="done(${i})"></i>`
+            }else{
+                viewList += `<i class="fa-regular fa-calendar-minus" onclick="done(${i})"></i>`
+            }
+            viewList += `</div>
+                        </li>`
+        })
+        listView.innerHTML = viewList;
+    }
+    view();
+    function done(idx){
+        listData[idx].done = !listData[idx].done;
+        view();
+    }
+
+    function del(idx){
+        listData.splice(idx,1)
+        view();
+    }
+
+    function mod(idx,todo){
+        inp.value = todo;
+        num.value = idx;
+
+        btn1.style.display = "none";
+        btn2.style.display = "block";
+    }
+</script>
+
+
+</body>
+</html>
