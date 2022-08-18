@@ -1,1 +1,30 @@
 @charset "utf-8";
+/******* css responsive init *******/
+html,body{height: 100%;}
+.vMoveM{display: none;}
+video{width: 100%;}
+
+.navbar{border-bottom: 1px solid #eee;}
+
+
+/******* css responsive *******/
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .vMove{display: none;}
+    .vMoveM{display: block;}
+}
+
+@media (max-width: 575px) {
+
+}
