@@ -5,7 +5,13 @@ html,body{height: 100%;}
 video{width: 100%;}
 
 .navbar{border-bottom: 1px solid #eee;}
+.bold{font-weight: bold;font-size: 30px;}
+img{width: 100%;}
 
+p{color: rgb(105, 105, 105);}
+
+.productText{left: 55%;width: 500px;}
+.productB{font-size: 50px;font-weight: bold;}
 
 /******* css responsive *******/
 @media (max-width: 1399px) {
