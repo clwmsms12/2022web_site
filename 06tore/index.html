@@ -17,6 +17,7 @@
     <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js" integrity="sha512-g+qKl+LYdI74iYWV+VI91ahB/N6mVjrP8aGCtyIGvM2FkgpwbEEey0eUVUuqNn94yYS6/WxVwTawukEqaf+53A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script>
         var slide = $(document).ready(function(){
@@ -319,10 +320,13 @@
                         </div>
                     </div>
                     <div class="box03">
-                        <img src="images/03heng05.jpg" alt="">
+                        <div class="weather">
+                            <h1 class="city"></h1>
+                            <div class="img"></div>
+                        </div>
                         <div class="box">
-                            <h6>20c 구름조금</h6>
-                            <p>습도 60% 바람 남남동 2m/s</p>
+                            <p class="w_id"></p>
+                            <p class="temp"></p>
                         </div>
                     </div>
                     <div class="box04">
@@ -368,6 +372,28 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $.ajax({
+            url:"https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=f02b73354c61d5c9c6a6531e7d43879c&units=metric&lang=kr",
+            dataType:"json",
+            success:locData
+        })
+
+        function locData(data){
+            console.log(data)
+            let city = data.name;
+            let weather = data.weather[0].main;
+            let icon = data.weather[0].icon;
+            let iconU = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`
+            let temp = data.main.temp+"&#x2103";
+            
+            $(".city").html(city)
+            $(".w_id").html(weather)
+            $(".img").html(iconU)
+            $(".temp").html(temp)
+        }
+    </script>
 
     <footer class="footerWrap">
         <footer class="footer">

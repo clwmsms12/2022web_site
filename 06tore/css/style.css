@@ -211,11 +211,21 @@ position: absolute;bottom: 100px;}
     width: 234px;height: 242px;
     position: absolute;right: 248px;
 }
-.sec02 .box03>img{width: 234px;height: 242px;}
+.sec02 .box03 .weather{
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
+}
+.sec02 .box03 .weather .city{
+    color: #fff;background: #000;width: 100%;opacity: 0.5;
+    text-align: center;
+}
+.sec02 .box03 .weather img{width: 150px;height: 150px;}
 .sec02 .box03 .box{
     width: 234px;height: 60px;
     position: absolute;bottom: 0;padding: 8px 15px;
     background-color: #000;opacity: 0.5;
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
 }
 .sec02 .box03 .box>h6,
 .sec02 .box03 .box>p{color: #fff;}
