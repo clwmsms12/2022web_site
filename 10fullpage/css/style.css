@@ -1,0 +1,41 @@
+@charset "utf-8";
+/******* css responsive init *******/
+.container{width: 1536px;}
+.MenuF{font-size: 18px;font-weight: bold;}
+h2{font-size: 45px;}
+h3{font-size: 24px;}
+h4{font-size: 22px;}
+h5{font-size: 20px;}
+h6{font-size: 14px;}
+
+.header{background: #000;}
+.header .nav{
+    width: 1756px;margin: 0 auto;
+    display: flex;justify-content: space-between;align-items: center;
+}
+.header .navMenu ul{height: 100%;display: flex;}
+.header .navMenu ul li{height: 100%;}
+.header .navMenu ul li a{height: 100%;color: #fff;}
+
+
+
+/******* css responsive *******/
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
