@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +10,74 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
     <script src="js/jquery.fullPage.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="nav">
-            <h1><a href="#"><img src="images/logo.svg" alt=""></a></h1>
-            <div class="navMenu">
-                <ul>
-                    <li class="MenuF"><a href="#">About</a></li>
-                    <li class="MenuF"><a href="#">Games</a></li>
-                    <li class="MenuF"><a href="#">Publishing</a></li>
-                    <li class="MenuF"><a href="#">News</a></li>
-                    <li class="MenuF"><a href="#">Contact</a></li>
-                    <li class="MenuF"><a href="#">Recruit</a></li>
-                </ul>
+
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+
+            <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0); font-size: 30px;"></i>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BluePotion</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 px-5 gap-5">
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">Games</a>
+                        </li>
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">Publishing</a>
+                        </li>
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item MenuF">
+                            <a class="nav-link text-white" href="#">Recruit</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
-    
-    
+    </nav>
 
-<script src="js/script.js"></script>
+    <div class="fullpage">
+        <div class="visual">
+            <iframe
+                src="https://www.youtube.com/embed/9v9_5w80rS4?&enablejsapi=1&disablekb=1&controls=0&rel=0&iv_load_policy=3&cc_load_policy=0&playsinline=1&showinfo=0&modestbranding=1&fs=0&mute=1&autoplay=1&loop=1"
+                autoplay muted loop muted playsinline poster>
+            </iframe>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
