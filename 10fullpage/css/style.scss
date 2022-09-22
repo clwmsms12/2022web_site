@@ -1,11 +1,30 @@
 html,body{height: 100%;}
-.container{width: 1536px !important;}
+// .container{width: 1755px !important;}
 .MenuF{font-size: 18px;font-weight: bold;}
-h2{font-size: 45px;}
+h2{
+    font-size: 45px !important;color: #fff !important;font-weight: bold !important;
+    position: absolute;top: 40%;left: 10%;transform: translateY(-40%);
+    line-height: 65px !important;
+}
 h3{font-size: 24px;}
 h4{font-size: 22px;}
 h5{font-size: 20px;}
-h6{font-size: 14px;}
+h6{
+    font-size: 14px !important;color: #fff !important;
+    font-weight: bold !important;
+}
 
+.section{overflow: hidden;}
 .navbar{background: rgba(0,0,0,0.5);}
-.visual iframe{width: 100%;height: 100vh}
+.wrap{width: 100%;height: 100%;position: relative;}
+.wrap video{width: 100%;}
+.newsIcon{
+    display: flex;gap: 10px;align-items: center;height: 40px;padding: 0 15px;
+    position: absolute;left: 10%;top: 60%;transform: translateY(-60%);
+    border-left: 4px solid #10A7FF;
+}
+.newsIcon i{color: #fff;}
+.youtube{
+    color: red;font-size: 50px;
+    position: absolute;left: 10%;top: 75%;transform: translateY(-75%);
+}
