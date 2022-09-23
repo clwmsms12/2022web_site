@@ -16,24 +16,32 @@ h2 {
   left: 10%;
   transform: translateY(-40%);
   line-height: 65px !important;
+  margin-bottom: 0 !important;
 }
 
 h3 {
   font-size: 24px;
+  margin-bottom: 0 !important;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 22px !important;
+  margin-bottom: 0 !important;
+  color: #868382 !important;
+  font-weight: bold !important;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 20px !important;
+  color: #fff !important;
+  font-weight: bold !important;
 }
 
 h6 {
   font-size: 14px !important;
   color: #fff !important;
   font-weight: bold !important;
+  margin-bottom: 0 !important;
 }
 
 .section {
@@ -71,11 +79,111 @@ h6 {
   color: #fff;
 }
 
-.youtube {
-  color: red;
-  font-size: 50px;
+.youtubeWrap {
   position: absolute;
   left: 10%;
   top: 75%;
   transform: translateY(-75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube {
+  color: red;
+  font-size: 50px;
+}
+
+.youT {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.page1 {
+  background-image: url(../images/p2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page1 .fontLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 80px;
+}
+.page1 .fontLogo .blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page1 .fontLogo .blue img {
+  margin-bottom: 80px;
+}
+.page1 .fontLogo img {
+  margin-bottom: auto;
+}
+.page1 .fontLogo .potion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page1 .fontLogo .potion img {
+  margin-bottom: 80px;
+}
+.page1 .fontLogo .bluepotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page1 .fontLogo .bluepotion img {
+  margin-bottom: 80px;
+}
+.page1 .gamer {
+  color: #10A7FF;
+  font-size: 43px;
+  font-weight: bold;
+  text-align: center;
+}
+.page1 h5 {
+  text-align: center;
+  line-height: 30px;
+}
+
+.page2 {
+  background-image: url(../images/p4-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page2 .contents h2 {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-40%);
+  z-index: 1;
+}
+.page2 .contents .colorBtn {
+  position: absolute;
+  left: 13%;
+  top: 40%;
+  transform: translateY(-40%);
+}
+.page2 .contents h4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page2 .contents .store {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  transform: translateY(-60%);
 }/*# sourceMappingURL=style.css.map */

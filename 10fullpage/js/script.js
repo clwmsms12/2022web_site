@@ -1,1 +1,1 @@
-$(".fullpage").fullpage();
+$("#fullpage").fullpage();
