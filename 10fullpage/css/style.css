@@ -44,6 +44,18 @@ h6 {
   margin-bottom: 0 !important;
 }
 
+.sky {
+  color: #10A7FF;
+}
+
+.red {
+  color: #AD0303;
+}
+
+.yellow {
+  color: #D18700;
+}
+
 .section {
   overflow: hidden;
 }
@@ -160,6 +172,18 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-animation: bAni 1s alternate infinite;
+          animation: bAni 1s alternate infinite;
+}
+@-webkit-keyframes bAni {
+  100% {
+    transform: scale(1.01);
+  }
+}
+@keyframes bAni {
+  100% {
+    transform: scale(1.01);
+  }
 }
 .page2 .contents h2 {
   position: absolute;
@@ -186,4 +210,41 @@ h6 {
   left: 20px;
   top: 60%;
   transform: translateY(-60%);
+}
+
+.page3 {
+  background-image: url(../images/p10-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: bAni2 1s alternate infinite;
+          animation: bAni2 1s alternate infinite;
+}
+@-webkit-keyframes bAni2 {
+  100% {
+    transform: scale(1.01);
+  }
+}
+@keyframes bAni2 {
+  100% {
+    transform: scale(1.01);
+  }
+}
+.page3 .contents h2 {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-40%);
+  z-index: 1;
+}
+.page3 .contents .colorBtn {
+  position: absolute;
+  left: 13%;
+  top: 40%;
+  transform: translateY(-40%);
+}
+.page3 .contents h4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
