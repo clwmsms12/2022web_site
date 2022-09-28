@@ -44,23 +44,20 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 px-5 gap-5">
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">About</a>
+                        <li class="nav-item MenuF" data-menuanchor="m1st">
+                            <a class="nav-link text-white" href="#m1st">About</a>
                         </li>
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">Games</a>
+                        <li class="nav-item MenuF" data-menuanchor="m2st">
+                            <a class="nav-link text-white" href="#m2st">Games</a>
                         </li>
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">Publishing</a>
+                        <li class="nav-item MenuF" data-menuanchor="m3st">
+                            <a class="nav-link text-white" href="#m3st">Publishing</a>
                         </li>
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">News</a>
+                        <li class="nav-item MenuF" data-menuanchor="m4st">
+                            <a class="nav-link text-white" href="#m4st">News</a>
                         </li>
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item MenuF">
-                            <a class="nav-link text-white" href="#">Recruit</a>
+                        <li class="nav-item MenuF" data-menuanchor="m5st">
+                            <a class="nav-link text-white" href="#m5st">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +66,7 @@
     </nav>
 
     <div id="fullpage">
-        <div class="section page0">
+        <div class="section page0"data-anchor="m0st">
             <div class="wrap">
                 <video src="images/Echo of Soul Steam _ Miller's Steppe.mp4"
                  frameborder="0" data-autoplay muted loop>
@@ -89,7 +86,7 @@
             </div>
         </div>
 
-        <div class="section page1">
+        <div class="section page1" data-anchor="m1st">
             <div class="bgImg">
                 
             </div>
@@ -121,7 +118,7 @@
             </div>
         </div>
 
-        <div class="section page2">
+        <div class="section page2" data-anchor="m2st">
             <div class="container ">
                 <div class="btnWrap">
                     <h2 class="redA">에오스 레드</h2>
@@ -137,7 +134,7 @@
             </div>
         </div>
 
-        <div class="section page3">
+        <div class="section page3" data-anchor="m2st">
             <div class="container ">
                 <div class="btnWrap">
                     <h2 class="redA">PROJECT B</h2>
@@ -147,7 +144,7 @@
             </div>
         </div>
 
-        <div class="section page4">
+        <div class="section page4" data-anchor="m2st">
             <div class="container ">
                 <div class="btnWrap">
                     <h2 class="redA">에오스 더 블루</h2>
@@ -160,7 +157,7 @@
             </div>
         </div>
 
-        <div class="section page5">
+        <div class="section page5" data-anchor="m3st">
             <div class="container ">
                 <div class="btnWrap">
                     <h2 class="redA">다크 히어로 대쉬</h2>
@@ -175,7 +172,7 @@
             </div>
         </div>
 
-        <div class="section page6">
+        <div class="section page6" data-anchor="m3st">
             <div class="container ">
                 <div class="btnWrap">
                     <h2 class="redA">월드 오브 워페어 : 1942 함대 키우기</h2>
@@ -184,8 +181,9 @@
             </div>
         </div>
 
-        <div class="section page7">
+        <div class="section page7" data-anchor="m4st">
             <div class="swiper mySwiper container">
+                <div class="news">NEWS</div>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="images/con01.jpg" alt="">
@@ -199,29 +197,62 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con03.png" alt="">
+                    <div class="newsT">블루포션게임즈, 2D 액션 방치형 '다크 히어로 대쉬' 출시</div>
+                    <div class="newsD">2022-08-05</div>
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con04.jpg" alt="">
+                    <div class="newsT">블루포션게임즈 '에오스 레드' 월드보스 '수르트' 업데이트 실시</div>
+                    <div class="newsD">2022-07-27</div>
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con05.jpg" alt="">
+                    <div class="newsT">[점프업G]밀덕과 캐주얼 게이머 모두 잡는다...블루포션게임즈 밀리터리...</div>
+                    <div class="newsD">2022-07-06</div>
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con06.jpg" alt="">
+                    <div class="newsT">[G-브리핑] 블루포션게임즈, '에오스 레드' 3주년 기념 이벤트 실시</div>
+                    <div class="newsD">2022-05-24</div>
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con07.jpg" alt="">
+                    <div class="newsT">블루포션게임즈,'에오스 레드'신규서버 '테르나' 캐릭터명 선점 이벤트...</div>
+                    <div class="newsD">2022-05-24</div>
                   </div>
                   <div class="swiper-slide">
                     <img src="images/con08.png" alt="">
+                    <div class="newsT">블루포션게임즈, 젤리스노우 스튜디오 '월드 오브 워페어: 1942배틀쉽'...</div>
+                    <div class="newsD">2021-12-015</div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="section page8"  data-anchor="m5st">
+            <div class="container ">
+                <div class="wich">
+                    <div class="line"></div>
+                    <h4>블루포션 게임즈</h4>
+                    <h5>
+                        서울시 강남구 테헤란로 309<br>
+                        삼성제일빌딩 2층
+                    </h5>
+                </div>
             </div>
         </div>
+        <footer class="section footer py-5 fp-auto-height">
+            <div class="container">
+                <p>
+                    (주)블루포션게임즈   서비스이용약관  개인정보취급방침  회사연혁<br>
+                    대표이사 : 홍길동   TEL : 02-540-7411  Email : bluepotion@bluepotion.co.kr<br>
+                    사업자등록번호 : 422-88-01250   주소 : 서울시 강남구 테헤란로 309 (역삼동, 삼성제일빌딩 2층) BluePotion Games Co.,Ltd. All Rights reserved.
+                </p>
+            </div>
+        </footer>
     </div>
-
-
     <script src="js/script.js"></script>
 </body>
 
