@@ -1,4 +1,7 @@
-$("#fullpage").fullpage();
+$("#fullpage").fullpage({
+  menu:".offcanvas-body",
+  anchors:["","m1st","m2st","","","m3st","","m4st","m5st"],
+});
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,

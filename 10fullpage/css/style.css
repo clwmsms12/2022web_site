@@ -23,6 +23,19 @@ body {
   margin-bottom: 0 !important;
 }
 
+.nav-link {
+  color: #fff !important;
+}
+
+.Menuf:hover .nav-link,
+.MenuF.active .nav-link {
+  color: #10A7FF !important;
+}
+
+.active {
+  color: #10A7FF !important;
+}
+
 h2 {
   font-size: 45px !important;
   color: #fff !important;
@@ -79,19 +92,22 @@ h6 {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-nav > li.active,
-.navbar-nav > li:hover {
-  color: #10A7FF;
+.navbar-toggler {
+  border: none !important;
 }
 
 .wrap {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
 .wrap video {
-  width: 100%;
+  height: 120vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .newsIcon {
@@ -163,7 +179,7 @@ h6 {
 .page1 .fontLogo {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 300px;
   margin-bottom: 80px;
 }
@@ -172,6 +188,7 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .page1 .fontLogo .blue img {
   margin-bottom: 80px;
@@ -184,6 +201,7 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .page1 .fontLogo .potion img {
   margin-bottom: 80px;
@@ -193,6 +211,7 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .page1 .fontLogo .bluepotion img {
   margin-bottom: 80px;
@@ -479,4 +498,112 @@ h6 {
 .footer {
   height: 170px !important;
   background: linear-gradient(to right, #3FA8FF, #3E67D3);
+}
+
+@media (max-width: 1399px) {
+  .page2 {
+    background-size: 190vh !important;
+  }
+}
+@media (max-width: 991px) {
+  .mainF {
+    font-size: 35px !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
+    line-height: 65px !important;
+    margin-bottom: 0 !important;
+  }
+  .newsIcon {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -55%);
+    border-left: 4px solid #10A7FF;
+  }
+  .page1 .fontLogo {
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.6);
+    margin-top: 200px;
+  }
+  .page1 .fontLogo img {
+    margin-bottom: 15px !important;
+  }
+  .page1 .fontLogo img:nth-child(2),
+.page1 .fontLogo img:nth-child(4) {
+    display: none;
+  }
+  .page1 .fontLogo .blue {
+    margin-bottom: 20px;
+  }
+  .page1 .fontLogo .potion {
+    margin-bottom: 20px;
+  }
+  .page1 .gamer {
+    transform: scale(0.6);
+    margin-top: -120px;
+  }
+  .page1 h5 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mainF {
+    width: 100%;
+    font-size: 25px !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    line-height: 65px !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+  .newsIcon {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -55%);
+    border-left: 4px solid #10A7FF;
+    display: block;
+    border-left: none;
+  }
+  .newsIcon i {
+    border-top: 2px solid #10A7FF;
+    padding: 10px 0;
+  }
+  .youtubeWrap {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%, -67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page2 .container .btnWrap {
+    flex-direction: column;
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
