@@ -97,13 +97,13 @@ h6 {
 }
 
 .wrap {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .wrap video {
-  height: 120vh;
+  height: 106%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -257,6 +257,7 @@ h6 {
 .page2 .container .btnWrap {
   display: flex;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 40px;
 }
 .page2 .container .btnWrap h2 {
@@ -264,6 +265,13 @@ h6 {
 }
 .page2 .container .btnWrap .colorBtn {
   margin-left: -70px;
+  transition: 0.3s;
+}
+.page2 .container .btnWrap .colorBtn:hover {
+  margin-left: -20px;
+}
+.page2 .container .btnWrap .colorBtnM {
+  display: none;
 }
 .page2 .container h4 {
   margin-bottom: 40px !important;
@@ -271,6 +279,7 @@ h6 {
 .page2 .container .store {
   display: flex;
   gap: 10px;
+  width: 25%;
 }
 
 .page3 {
@@ -303,6 +312,7 @@ h6 {
 .page3 .container .btnWrap {
   display: flex;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 40px;
 }
 .page3 .container .btnWrap h2 {
@@ -310,6 +320,10 @@ h6 {
 }
 .page3 .container .btnWrap .colorBtn {
   margin-left: -70px;
+  transition: 0.3s;
+}
+.page3 .container .btnWrap .colorBtn:hover {
+  margin-left: -20px;
 }
 .page3 .container h4 {
   margin-bottom: 40px !important;
@@ -345,6 +359,7 @@ h6 {
 .page4 .container .btnWrap {
   display: flex;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 40px;
 }
 .page4 .container .btnWrap h2 {
@@ -352,6 +367,10 @@ h6 {
 }
 .page4 .container .btnWrap .colorBtn {
   margin-left: -70px;
+  transition: 0.3s;
+}
+.page4 .container .btnWrap .colorBtn:hover {
+  margin-left: -20px;
 }
 .page4 .container h4 {
   margin-bottom: 40px !important;
@@ -387,6 +406,7 @@ h6 {
 .page5 .container .btnWrap {
   display: flex;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 40px;
 }
 .page5 .container .btnWrap h2 {
@@ -394,6 +414,10 @@ h6 {
 }
 .page5 .container .btnWrap .colorBtn {
   margin-left: -70px;
+  transition: 0.3s;
+}
+.page5 .container .btnWrap .colorBtn:hover {
+  margin-left: -20px;
 }
 .page5 .container h4 {
   margin-bottom: 40px !important;
@@ -456,6 +480,7 @@ h6 {
 .page7 .container .swiper-slide {
   width: 280px;
   padding: 30px 0;
+  height: 100%;
   border-top: 1px solid #e5e7eb;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -499,10 +524,33 @@ h6 {
   height: 170px !important;
   background: linear-gradient(to right, #3FA8FF, #3E67D3);
 }
+.footer p {
+  color: #121212;
+}
 
 @media (max-width: 1399px) {
   .page2 {
+    background-size: 192vh !important;
+    background-position-x: 60%;
+  }
+  .page3 {
+    background-size: 198vh !important;
+  }
+  .page4 {
+    background-size: 195vh !important;
+    background-position-x: 71%;
+  }
+  .page5 {
     background-size: 190vh !important;
+    background-position-x: 60%;
+  }
+  .page8 {
+    background-size: 90%;
+  }
+}
+@media (max-width: 1199px) {
+  .footer p {
+    font-size: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -526,7 +574,7 @@ h6 {
     height: 40px;
     padding: 0 15px;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 55%;
     transform: translate(-50%, -55%);
     border-left: 4px solid #10A7FF;
@@ -556,6 +604,30 @@ h6 {
   }
   .page1 h5 {
     display: none;
+  }
+  .page7 .swiper-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  .page7 .swiper-wrapper .swiper-slide {
+    width: 280px;
+    padding: 30px 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .page7 .swiper-wrapper .swiper-slide img {
+    height: 170px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .page7 .swiper-wrapper .swiper-slide .newsT {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -602,8 +674,112 @@ h6 {
     justify-content: center;
     align-items: center;
   }
+  .btnWrap {
+    cursor: initial !important;
+  }
   .page2 .container .btnWrap {
     flex-direction: column;
     display: block;
+  }
+  .page2 .container .btnWrap .redA {
+    font-size: 30px !important;
+    margin-bottom: 40px;
+  }
+  .page2 .container .btnWrap .colorBtn {
+    display: none;
+  }
+  .page2 .container .btnWrap .colorBtnM {
+    display: block;
+  }
+  .page2 .container h4 {
+    font-size: 15px !important;
+  }
+  .page2 .container .store {
+    width: 100%;
+  }
+  .page2 .container .store img {
+    width: 23.5%;
+  }
+  .page3 .container .btnWrap {
+    flex-direction: column;
+    display: block;
+  }
+  .page3 .container .btnWrap .redA {
+    font-size: 30px !important;
+    margin-bottom: 40px;
+  }
+  .page3 .container .btnWrap .colorBtn {
+    display: none;
+  }
+  .page3 .container h4 {
+    font-size: 15px !important;
+  }
+  .page3 .container .store {
+    width: 100%;
+  }
+  .page3 .container .store img {
+    width: 23.5%;
+  }
+  .page4 .container .btnWrap {
+    flex-direction: column;
+    display: block;
+  }
+  .page4 .container .btnWrap .redA {
+    font-size: 30px !important;
+    margin-bottom: 40px;
+  }
+  .page4 .container .btnWrap .colorBtn {
+    display: none;
+  }
+  .page4 .container h4 {
+    font-size: 15px !important;
+  }
+  .page4 .container .store {
+    width: 100%;
+  }
+  .page4 .container .store img {
+    width: 23.5%;
+  }
+  .page5 .container .btnWrap {
+    flex-direction: column;
+    display: block;
+  }
+  .page5 .container .btnWrap .redA {
+    font-size: 30px !important;
+    margin-bottom: 40px;
+  }
+  .page5 .container .btnWrap .colorBtn {
+    display: none;
+  }
+  .page5 .container h4 {
+    font-size: 15px !important;
+  }
+  .page5 .container .store {
+    width: 100%;
+  }
+  .page5 .container .store img {
+    width: 23.5%;
+  }
+  .page7 .swiper-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  .page7 .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    padding: 30px 0;
+    height: 500px;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .page7 .swiper-wrapper .swiper-slide img {
+    height: 230px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,17 @@ $("#fullpage").fullpage({
 });
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1199: {
+      slidesPerView: 4,
+    }
+  },
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
@@ -18,3 +28,14 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  // $(window).resize(function(){ 
+  //   if (window.innerWidth > 760) {
+
+
+  //   } else {
+
+
+  //   }
+  //   }).resize();
