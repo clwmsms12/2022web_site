@@ -16,9 +16,9 @@ body {
   color: #fff !important;
   font-weight: bold !important;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 10%;
-  transform: translateY(-40%);
+  _transform: translateY(-40%);
   line-height: 65px !important;
   margin-bottom: 0 !important;
 }
@@ -103,7 +103,7 @@ h6 {
 }
 
 .wrap video {
-  height: 106%;
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -118,8 +118,8 @@ h6 {
   padding: 0 15px;
   position: absolute;
   left: 10%;
-  top: 60%;
-  transform: translateY(-60%);
+  top: 47%;
+  _transform: translateY(-60%);
   border-left: 4px solid #10A7FF;
 }
 
@@ -130,8 +130,8 @@ h6 {
 .youtubeWrap {
   position: absolute;
   left: 10%;
-  top: 75%;
-  transform: translateY(-75%);
+  top: 55%;
+  _transform: translateY(-75%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +372,9 @@ h6 {
 .page4 .container .btnWrap .colorBtn:hover {
   margin-left: -20px;
 }
+.page4 .container .btnWrap .colorBtnM {
+  display: none;
+}
 .page4 .container h4 {
   margin-bottom: 40px !important;
 }
@@ -418,6 +421,9 @@ h6 {
 }
 .page5 .container .btnWrap .colorBtn:hover {
   margin-left: -20px;
+}
+.page5 .container .btnWrap .colorBtnM {
+  display: none;
 }
 .page5 .container h4 {
   margin-bottom: 40px !important;
@@ -631,6 +637,9 @@ h6 {
   }
 }
 @media (max-width: 767px) {
+  .wrap video {
+    width: 350%;
+  }
   .mainF {
     width: 100%;
     font-size: 25px !important;

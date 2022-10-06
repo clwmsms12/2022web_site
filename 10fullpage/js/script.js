@@ -29,6 +29,8 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+  new WOW().init();
+
 
   // $(window).resize(function(){ 
   //   if (window.innerWidth > 760) {
