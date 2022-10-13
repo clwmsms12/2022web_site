@@ -724,6 +724,14 @@ h6 {
     background-size: 190vh !important;
     background-position-x: 60%;
   }
+  .page7 .swiper-button-next {
+    position: absolute;
+    right: 50px;
+  }
+  .page7 .swiper-button-prev {
+    position: absolute;
+    left: 50px;
+  }
   .page8 {
     background-size: 90%;
   }
@@ -914,6 +922,9 @@ h6 {
   .page4 .container .btnWrap .colorBtn {
     display: none;
   }
+  .page4 .container .btnWrap .colorBtnM {
+    display: block;
+  }
   .page4 .container h4 {
     font-size: 15px !important;
   }
@@ -933,6 +944,9 @@ h6 {
   }
   .page5 .container .btnWrap .colorBtn {
     display: none;
+  }
+  .page5 .container .btnWrap .colorBtnM {
+    display: block;
   }
   .page5 .container h4 {
     font-size: 15px !important;
@@ -961,6 +975,15 @@ h6 {
     height: 230px;
     width: 100%;
     margin-bottom: 10px;
+  }
+  .page7 .swiper-button-next {
+    position: absolute;
+    top: 60%;
+    right: 250px;
+  }
+  .page7 .swiper-button-prev {
+    position: absolute;
+    left: 250px;
   }
   .footer p {
     font-size: 11px;

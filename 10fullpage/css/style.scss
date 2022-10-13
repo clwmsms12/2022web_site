@@ -437,6 +437,10 @@ h6{
         background-size:190vh !important;
         background-position-x: 60%;
     }
+    .page7{
+        .swiper-button-next{position: absolute;right: 50px;}
+        .swiper-button-prev{position: absolute;left: 50px;}
+    }
     .page8{
         background-size: 90%;
     }
@@ -563,6 +567,7 @@ h6{
                 flex-direction: column;display: block;
                 .redA{font-size: 30px !important;margin-bottom: 40px;}
                 .colorBtn{display: none;}
+                .colorBtnM{display: block;}
             }
             h4{font-size: 15px !important;}
             .store{
@@ -578,6 +583,7 @@ h6{
                 flex-direction: column;display: block;
                 .redA{font-size: 30px !important;margin-bottom: 40px;}
                 .colorBtn{display: none;}
+                .colorBtnM{display: block;}
             }
             h4{font-size: 15px !important;}
             .store{
@@ -598,6 +604,8 @@ h6{
                 img{height: 230px;width: 100%;margin-bottom: 10px;}
             }
         }
+        .swiper-button-next{position: absolute;top: 60%; right: 250px;}
+        .swiper-button-prev{position: absolute;left: 250px;}
     }
 
     .footer{
