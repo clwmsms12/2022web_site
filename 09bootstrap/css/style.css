@@ -32,9 +32,17 @@ p{color: rgb(105, 105, 105);}
 }
 
 @media (max-width: 767px) {
-    .vMove{display: none;}
-    .vMoveM{display: block;}
+    .vMove{
+        display: block;
+        height: 100%;
+    }
+    /* .vMoveM{
+        display: block;
+    } */
 }
+
+.productB{font-size: 10px;}
+.ppp{font-size: 2px; line-height: 10px;}
 
 @media (max-width: 575px) {
 
